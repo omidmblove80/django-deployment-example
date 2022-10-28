@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends "basic/base.html" %}
+  {% block body-block %}
+    <h1>welcome to index</h1>
+    <h2>this is index.html shoswing!!</h2>
+    <h1>{{ text | cut:"world"}}</h1>
+    <h1>{{ number | add:"99" }}</h1>
+  {% endblock %}
+{% load static %}
+
+<!-- <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script type="text/javascript" src="{% static 'bootstrap.min.js' %}">
+    </script>
+    <script>alert();</script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>hope i've got the files!!</h2>
+      </div>
+
+    </div>
+
+
+  </body>
+</html> -->
